@@ -25,6 +25,9 @@ public slots:
     void closeCOMPort();
     void readCOMPortData();
     void checkRadioConditions();
+    void startCheckingContinously();
+    void stopCheckingContinously();
+    void updateTime(int time);
 
 private:
     void findCOMPorts();
@@ -32,6 +35,9 @@ private:
     Ui::ngiot *ui;
     QSerialPort *serial;
     QSerialPortInfo *serialPortInfo;
+    QTimer *timer;
+    int time =1000;
+
 };
 
 #endif // NGIOT_H

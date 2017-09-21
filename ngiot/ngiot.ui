@@ -41,12 +41,32 @@
       <item>
        <widget class="QPushButton" name="buttonRadionConditions">
         <property name="text">
-         <string>Radio Conditions</string>
+         <string>Start check radio conditions</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QTextBrowser" name="textBrowser"/>
+       <widget class="QPushButton" name="buttonStopRadioConditionsCheck">
+        <property name="text">
+         <string>Stop check radio conditions</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="sliderTime">
+        <property name="maximum">
+         <number>10000</number>
+        </property>
+        <property name="singleStep">
+         <number>1000</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="text"/>
       </item>
      </layout>
     </item>
